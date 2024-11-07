@@ -128,11 +128,12 @@ class _WhatsAppBodyAppState extends State<WhatsAppBodyPage> {
                             ),
                           ),
                           Container(
-                            margin: const EdgeInsets.symmetric(horizontal: 10),
+                              margin: const EdgeInsets.symmetric(horizontal: 10),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
-                                Text(element["name"], style: const TextStyle(fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),),
+                                Text(element["name"], style: const TextStyle(fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold,), textAlign: TextAlign.start,),
                                 Text(element["msg"], style: const TextStyle(fontSize: 20, color: Colors.white),)
                               ],
                             ),
